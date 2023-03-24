@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn emailmate.wsgi 
+web: python manage.py makemigrations && python manage.py migrate && gunicorn emailmate.wsgi 
